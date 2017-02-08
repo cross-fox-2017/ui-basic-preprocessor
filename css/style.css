@@ -92,7 +92,7 @@ body {
 #box-pesanan li {
   float: left;
 }
-#box-pesanan li a {
+#box-pesanan a {
   padding: 12px 15px;
   display: block;
   text-decoration: none;
