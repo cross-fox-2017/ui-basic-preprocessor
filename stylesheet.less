@@ -27,5 +27,10 @@
 // }
 
 .screen-color{
-  color: #212121;
+  @media screen {
+    color: #212121;
+    @media (min-width: 768px){
+      color: #333333;
+    }
+  }
 }
