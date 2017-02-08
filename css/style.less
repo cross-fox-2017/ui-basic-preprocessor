@@ -1,5 +1,7 @@
 @color-navbar: rgb(81, 184, 213);
 @text-color: white;
+@logo-color: rgb(230, 170, 39)
+
 
 body {
   margin-top: 10px;
@@ -18,7 +20,7 @@ body {
 }
 
 #logo{
-  background-color: rgb(230, 170, 39);
+  background-color: @logo-color;
   margin-right: 40px;
 }
 
@@ -79,7 +81,7 @@ body {
   display: inline-block;
   border: 8px solid @color-navbar;
 }
-#destination, #time, #count{
+#destination, #count{
   width: 31%;
   float: left;
   margin: 0 5px;
@@ -90,6 +92,7 @@ body {
 #time{
   border-left: 3px solid @color-navbar;
   border-right: 3px solid @color-navbar;
+  #destination
 }
 
 
