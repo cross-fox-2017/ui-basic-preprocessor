@@ -26,11 +26,19 @@
 //   }
 // }
 
-.screen-color{
-  @media screen {
-    color: #212121;
-    @media (min-width: 768px){
-      color: #333333;
+// .screen-color{
+//   @media screen {
+//     color: #212121;
+//     @media (min-width: 768px){
+//       color: #333333;
+//     }
+//   }
+// }
+
+@container-margin: 20px;
+.container{
+  margin: @container-margin;
+  @media (max-width: 480px){
+    margin: (@container-margin/2)
     }
-  }
 }
