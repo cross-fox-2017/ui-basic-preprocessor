@@ -51,7 +51,18 @@
 // }
 
 //function
-@width: 0.05;
-.coln {
-  margin: percentage(@width);
+// @width: 0.05;
+// .coln {
+//   margin: percentage(@width);
+// }
+
+//namespace
+#header-styles {
+  .header-lg {
+    font-size: 32px;
+  }
+}
+.page-header {
+  color: #111111;
+  #header-styles > .header-lg;
 }
