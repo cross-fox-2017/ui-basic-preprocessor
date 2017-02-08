@@ -1,6 +1,6 @@
 @color-navbar: rgb(81, 184, 213);
 @text-color: white;
-@logo-color: rgb(230, 170, 39)
+@logo-color: rgb(230, 170, 39);
 
 
 body {
@@ -36,15 +36,22 @@ body {
   list-style-type: none;
   background-color: @color-navbar;
   overflow: hidden;
+  li a{
+      float:left;
+      padding: 12px 15px;
+      display: block;
+      color: @text-color;
+      text-decoration: none;
+  }
 }
 
-#navigation-links li a{
-    float:left;
-    padding: 12px 15px;
-    display: block;
-    color: @text-color;
-    text-decoration: none;
-}
+// #navigation-links li a{
+//     float:left;
+//     padding: 12px 15px;
+//     display: block;
+//     color: @text-color;
+//     text-decoration: none;
+// }
 
 #navigation-links li a:hover{
     color: @text-color;
