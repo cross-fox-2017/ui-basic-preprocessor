@@ -17,6 +17,12 @@
   width: @full-width;
 }
 
+.flex(@justify, @align) {
+  display: flex;
+  justify-content: @justify;
+  align-items: @align;
+}
+
 /* =================================
   Base Element Styles
 ==================================== */
@@ -68,10 +74,6 @@ p {
   }
   .navbar-right {
     float: @right;
-  }
-  .nav-list {
-    padding: 25px;
-    margin: 0px 20px;
   }
 }
 
@@ -153,10 +155,11 @@ p {
 }
 
 .footer {
+  .flex(center, center);
   position: relative;
   bottom: 0px;
   width: @full-width;
-  height: 50px;
+  height: 75px;
   padding: 1%;
   background-color: @color-white-transparent;
   clear: both;
