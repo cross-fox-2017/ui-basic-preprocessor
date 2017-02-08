@@ -57,12 +57,21 @@
 // }
 
 //namespace
-#header-styles {
-  .header-lg {
-    font-size: 32px;
+// #header-styles {
+//   .header-lg {
+//     font-size: 32px;
+//   }
+// }
+// .page-header {
+//   color: #111111;
+//   #header-styles > .header-lg;
+// }
+
+//scope
+@padding: percentage(0.01);
+.card{
+  @padding: 10px;
+  .footer{
+    padding: @padding;
   }
-}
-.page-header {
-  color: #111111;
-  #header-styles > .header-lg;
 }
