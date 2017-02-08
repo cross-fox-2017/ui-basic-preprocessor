@@ -1,0 +1,209 @@
+@import "../normalize.less";
+@import url("https://fonts.googleapis.com/css?family=Barrio");
+
+@mainHeaderWidth:1400px;
+@mainHeaderHeight:400px;
+@floatLeft:left;
+@floatRight:right;
+@fontHeading:'Ceviche One', cursive;
+.header {
+  width: @mainHeaderWidth;
+  height: @mainHeaderHeight;
+}
+ul{
+  &.topnav{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+  }
+  &.topnav li{
+    float: @floatLeft;
+    border-right: 1px solid #bbb;
+    & a{
+      display: block;
+      color: white;
+      text-align: center;
+      padding: 14px 16px;
+      text-decoration: none;
+      &:hover:not(.active){
+        background-color: #111;
+      }
+      &.active{
+        background-color:#4CAF50;
+      }
+      &.right{
+        float: @floatRight;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 600px){
+    ul.topnav li.right,
+    ul.topnav li {float: none;}
+}
+
+//grid system
+.grid-container{
+  width:100%;
+  &*{
+    box-sizing: border-box;
+  }
+}
+.row{
+  &:before{
+    content:"";
+    display:table;
+    clear:both;
+  }
+  &:after{
+    content:"";
+    display: table ;
+    clear:both;
+  }
+}
+
+// grid system default
+.col{
+  &-1{
+  width:16.66666667%;
+  }
+  &-2{
+    width:33.33%;
+  }
+  &-3{
+      width:50%;
+  }
+  &-4{
+      width:66.66666667%;
+  }
+  &-5{
+      width:83.3333333%;
+  }
+  &-6{
+      width:100%;
+  }
+}
+
+// grid system change to 100% when
+@media all and (max-width:800px){
+       .col-1{ width: 33.33%;}
+       .col-2{ width: 50%;}
+       .col-3{ width: 83.33%;}
+       .col-4{ width: 100%;}
+       .col-5{ width: 100%;}
+       .col-6{ width: 100%;}
+
+       .row .col-2:last-of-type{
+          width: 100%;
+      }
+
+      .row .col-5 ~ .col-1{
+          width: 100%;
+      }
+}
+
+[class*='col-'] {
+       float: left;
+       min-height: 100px;
+       background-color: #d6d6c2;
+}
+
+[class*='col-'] > p {
+ background-color: #d6d6c2;
+ padding: 0;
+ margin: 0;
+ text-align: center;
+}
+
+// heading
+h{
+  &1{
+    font-size: 36px;
+    font-family: @fontHeading;
+  }
+  &2{
+    font-size: 30px;
+    font-family:@fontHeading;
+  }
+  &3{
+    font-size: 24px;
+    font-family: @fontHeading;
+  }
+  &4{
+    font-size: 18px;
+    font-family: @fontHeading;
+  }
+  &5{
+    font-size: 14px;
+    font-family: @fontHeading;
+  }
+  &6{
+    font-size: 12px;
+    font-family: @fontHeading;
+  }
+}
+
+.text{
+  &-bold{
+    font-weight: bold;
+  }
+  &-italic{
+    font-style: italic;
+  }
+  &-underline{
+    text-decoration: underline;
+  }
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+th, td {
+    text-align: left;
+    padding: 8px;
+}
+
+tr:nth-child(even){background-color: #f2f2f2}
+
+th {
+    background-color: #4CAF50;
+    color: white;
+}
+
+.jumbotron{
+  padding-top: 30px;
+  padding-bottom: 30px;
+  margin-bottom: 30px;
+  color:inherit;
+  background-color: #eee;
+  padding-right: 15px;
+  padding-left: 15px;
+  & h1{
+    text-align: center;
+    font-family: 'Barrio', cursive;
+  }
+}
+
+.button{
+  &-danger{
+    border-radius: 2px;
+    background-color: red;
+  }
+  &-calm{
+    border-radius: 4px;
+    background-color: green;
+  }
+  &-cold{
+    border-radius: 8px;
+    background-color: blue;
+  }
+  &-happy{
+    border-radius: 12px;
+    background-color: yellow;
+  }
+}
