@@ -1,0 +1,162 @@
+@header-color: rgb(61, 135, 182);
+@navbar-col: #ea4c88;
+
+@txt-color: rgb(255, 255, 255);
+@sub-txt-color: rgb(214, 211, 211);
+
+// Login button
+@btnLogin: #f58d12;
+@btnLogin-hover: #c84a1b;
+@btnLogin-active: #734230;
+
+// Navbar button
+@btnNavbar-hover:#f14e12;
+@btnNavbar-active: #d04b1a;
+
+// Call to Action button
+@btnCTA: #4CAF50;
+@btnCTA-hover: #329136;
+@btnCTA-active: #1c621f;
+
+#font{
+  text-decoration: none !important;
+  font-family: 'Montserrat', sans-serif;
+  color: @txt-color;
+}
+
+#sub-font{
+  text-decoration: none !important;
+  font-family: 'Montserrat', sans-serif;
+  color: @sub-txt-color;
+}
+
+#navbar{
+  list-style-type: none;
+  overflow: hidden;
+  background-color: @navbar-col;
+}
+
+#header-text{
+  font-size: 50px;
+  #font;
+}
+
+#center{
+  display: block;
+  margin: 0 auto;
+}
+
+#header{
+  background-color: @header-color;
+  color: @txt-color;
+  padding: 80px 16px;
+}
+
+#navbar{
+    list-style-type: none;
+    overflow: hidden;
+    background-color: @navbar-col;
+}
+
+#header{
+  background-color: @header-color;
+  color: @txt-color;
+  padding: 80px 16px
+}
+
+#header-text{
+  font-size: 50px;
+  font-family: 'Montserrat', sans-serif;
+}
+
+#subheader-text{
+  #sub-font;
+  font-size: 25px;
+  margin: 5% auto;
+}
+
+.obj-center{
+  #center;
+}
+
+.container-center{
+  #center;
+  width: 960px;
+}
+
+.login-btn {
+    color: @txt-color;
+    background-color: @btnLogin;
+    text-align: center;
+    border: none;
+    display: inline-block;
+    font-size: 16px;
+    padding: 18px 32px;
+}
+
+.login-btn:hover {
+    color: @txt-color;
+    background-color: @btnLogin-hover;
+}
+
+.login-btn:active {
+    color: @txt-color;
+    background-color: @btnLogin-active;
+}
+
+.navbar-btn {
+    float: left;
+}
+
+.navbar-btn {
+  a {
+    #font;
+    display: block;
+    padding: 20px 16px;
+  }
+}
+
+.navbar-btn {
+  a:hover {
+    background-color: @btnNavbar-hover;
+  }
+}
+
+.navbar-btn {
+  a:active {
+    background-color: @btnNavbar-active;
+  }
+}
+
+.btn-right{
+  float: right;
+  margin-right: 25px;
+}
+
+.text-center{
+    text-align: center;
+}
+
+.btn-header{
+  #font;
+  background-color: @btnCTA;
+  border: none;
+  padding: 15px 32px;
+  text-align: center;
+  font-size: 16px;
+}
+
+.btn-header:hover{
+  background-color: @btnCTA-hover;
+}
+
+.btn-header:active{
+  background-color: @btnCTA-active;
+}
+
+.img-product{
+  float: left;
+}
+
+.magic{ -webkit-filter: sepia(100%)}
+.magic:hover{-webkit-filter: none}
