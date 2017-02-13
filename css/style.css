@@ -1,0 +1,129 @@
+#font {
+  text-decoration: none !important;
+  font-family: 'Montserrat', sans-serif;
+  color: #ffffff;
+}
+#sub-font {
+  text-decoration: none !important;
+  font-family: 'Montserrat', sans-serif;
+  color: #d6d3d3;
+}
+#navbar {
+  list-style-type: none;
+  overflow: hidden;
+  background-color: #ea4c88;
+}
+#header-text {
+  font-size: 50px;
+  text-decoration: none !important;
+  font-family: 'Montserrat', sans-serif;
+  color: #ffffff;
+}
+#center {
+  display: block;
+  margin: 0 auto;
+}
+#header {
+  background-color: #3d87b6;
+  color: #ffffff;
+  padding: 80px 16px;
+}
+#navbar {
+  list-style-type: none;
+  overflow: hidden;
+  background-color: #ea4c88;
+}
+#header {
+  background-color: #3d87b6;
+  color: #ffffff;
+  padding: 80px 16px;
+}
+#header-text {
+  font-size: 50px;
+  font-family: 'Montserrat', sans-serif;
+}
+#subheader-text {
+  text-decoration: none !important;
+  font-family: 'Montserrat', sans-serif;
+  color: #d6d3d3;
+  font-size: 25px;
+  margin: 5% auto;
+}
+.obj-center {
+  display: block;
+  margin: 0 auto;
+}
+.container-center {
+  display: block;
+  margin: 0 auto;
+  width: 960px;
+}
+.login-btn {
+  color: #ffffff;
+  background-color: #f58d12;
+  text-align: center;
+  border: none;
+  display: inline-block;
+  font-size: 16px;
+  padding: 18px 32px;
+}
+.login-btn:hover {
+  color: #ffffff;
+  background-color: #c84a1b;
+}
+.login-btn:active {
+  color: #ffffff;
+  background-color: #734230;
+}
+.navbar-btn {
+  float: left;
+}
+.navbar-btn a {
+  text-decoration: none !important;
+  font-family: 'Montserrat', sans-serif;
+  color: #ffffff;
+  display: block;
+  padding: 20px 16px;
+}
+.navbar-btn a:hover {
+  background-color: #f14e12;
+}
+.navbar-btn a:active {
+  background-color: #d04b1a;
+}
+.btn-right {
+  float: right;
+  margin-right: 25px;
+}
+.text-center {
+  text-align: center;
+}
+.btn-header {
+  text-decoration: none !important;
+  font-family: 'Montserrat', sans-serif;
+  color: #ffffff;
+  background-color: #4CAF50;
+  border: none;
+  padding: 15px 32px;
+  text-align: center;
+  font-size: 16px;
+}
+.btn-header:hover {
+  background-color: #329136;
+}
+.btn-header:active {
+  background-color: #1c621f;
+}
+.img-product {
+  float: left;
+}
+.magic {
+  -webkit-filter: opacity(50%);
+}
+.magic:hover {
+  -webkit-filter: none;
+}
+
+.magic:active {
+  -webkit-filter: brightness(0.70);
+}
